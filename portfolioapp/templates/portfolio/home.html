@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ayush | Portfolio</title>
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+</head>
+
+<body>
+
+{% include 'portfolio/navbar.html' %}
+
+<section class="home-section">
+    <div class="home-content">
+<img src="{% static 'portfolio/a.jpg' %}" class="profile-pic" alt="">
+
+        <h1>Ayush Kumar</h1>
+        <a href="/projects/" class="btn-main">View My Projects</a>
+    </div>
+</section>
+
+</body>
+</html>
