@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: ayush-portfolio
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn portfolioproject.wsgi:application
